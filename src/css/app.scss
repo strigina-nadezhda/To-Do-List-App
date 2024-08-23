@@ -1,0 +1,127 @@
+/* Основной стиль для всего сайта */
+body {
+  font-family: 'Arial', sans-serif;
+  color: $dark;
+  background-color: $dark-page;
+  margin: 0;
+  padding: 0;
+}
+
+/* Контейнер для всего контента */
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок страницы */
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: $primary;
+}
+
+/* Подзаголовки */
+h2 {
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: $dark;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: $dark;
+}
+
+/* Стили для кнопок */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button.primary {
+  background-color: $primary;
+  color: #fff;
+}
+
+button.primary:hover {
+  background-color: darken($primary, 10%);
+}
+
+button.secondary {
+  background-color: $secondary;
+  color: #fff;
+}
+
+button.secondary:hover {
+  background-color: darken($secondary, 10%);
+}
+
+/* Стили для списка дел */
+ul.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul.todo-list li {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul.todo-list li.completed {
+  text-decoration: line-through;
+  background-color: #e9ecef;
+  color: $secondary;
+}
+
+ul.todo-list li .checkbox {
+  margin-right: 10px;
+}
+
+/* Стили для формы добавления задач */
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+form input[type='text'] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  margin-left: 10px;
+}
+
+/* Общие отступы */
+p {
+  margin: 0 0 15px 0;
+}
+
+/* Футер */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  color: $dark;
+}
